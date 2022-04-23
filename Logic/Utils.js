@@ -1,3 +1,3 @@
 export const rollDie = (die) => {
-  return die[Math.floor(Math.rand() * 6)];
+  return die[Math.floor(Math.random() * 6)];
 }

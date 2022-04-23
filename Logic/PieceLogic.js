@@ -1,8 +1,7 @@
-
 export default class Piece {
-  constructor(id, team) {
+  constructor(id, party) {
     this.id = id;
-    this.team = team;
+    this.party = party;
     this.pos = null;
   }
 }

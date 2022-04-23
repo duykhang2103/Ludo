@@ -1,18 +1,14 @@
+export default class GameState {
+  constructor(map, pieces, playerCount, players) {
+    this.map = map;
+    this.pieces = pieces;
+    this.players = players;
 
- export default class GameState {
-   constructor(map, pieces, playerCount) {
-     this.map = map;
-     this.pieces = pieces;
-     this.turn = 0;
-     this.playerCount = playerCount;
-     this.currentPlayer = 0;
-   }
+    this.playerCount = playerCount;
+    this.turn = 0;
+    this.turnOrder = Array(playerCount).fill(0).map((item, index) => index);
+    this.currentPlayer = 0;
 
-   // movePiece(pieceId){
-   //   const piece = this.pieces.find(piece => piece.id == pieceId);
-   //   for(let i=0; i<steps; i++){
-   //
-   //     piece.pos = this.cells[piece.pos].next;
-   //   }
-   // }
- }
+    this.rollResult = 0;
+  }
+}
