@@ -1,0 +1,16 @@
+
+#game-container {
+  width: 500px;
+  height: 500px;
+  /* background:  */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  /* width: 50px; */
+  /* height: 50px; */
+  background: #AAA;
+  border: 1px solid #000;
+  /* grid-area: cellArea; */
+}
