@@ -3,6 +3,6 @@ export default class Player {
         this.id = id;
         this.name = name;
         this.party = party;
-        this.hasMoved = false;
+        // this.hasMoved = false;
     }
 }

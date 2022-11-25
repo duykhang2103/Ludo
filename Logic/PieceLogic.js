@@ -3,5 +3,7 @@ export default class Piece {
     this.id = id;
     this.party = party;
     this.pos = null;
+    this.isHome = true;
+    this.approachingPos = null;
   }
 }

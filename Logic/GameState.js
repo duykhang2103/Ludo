@@ -6,8 +6,9 @@ export default class GameState {
 
     this.playerCount = playerCount;
     this.turn = 0;
-    this.turnOrder = Array(playerCount).fill(0).map((item, index) => index);
     this.currentPlayer = 0;
+    this.hasMoved = false;
+    this.checkMovable = false;
 
     this.rollResult = 0;
   }

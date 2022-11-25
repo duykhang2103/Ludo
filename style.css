@@ -1,14 +1,77 @@
 .board-container {
-  width: 300px;
+  width: 700px;
   height: 300px;
   font-size: 2rem;;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(3, 1fr);
   text-align: center;
 }
 
 .cell {
+  display flex;
   background: #AAA;
   border: 1px solid #000;
+  justify-content: flex-start;
+}
+
+.terrain {
+  background: none;
+}
+
+.path {
+  background: #AAA;
+}
+
+.home0 {
+  background: #922;
+}
+
+.home1 {
+  background: #B0A;
+}
+
+.summon {
+  background: #256;
+}
+
+.gate {
+  background: #E60;
+}
+
+.cage0 {
+  background: #922;
+}
+
+.cage1 {
+  background: #B0A;
+}
+
+.finish0 {
+  background: #901;
+}
+
+.finish1 {
+  background: #B04;
+}
+
+
+
+
+.piece {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.piece0 {
+  background: #22E;
+}
+
+.piece1 {
+  background: #E22;
+}
+
+.piece-movable {
+  background: #3B4;
 }
